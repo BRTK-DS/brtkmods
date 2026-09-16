@@ -63,6 +63,20 @@
 .legal-copy a { @apply text-cyan-300 underline decoration-cyan-300/30 underline-offset-4 transition-colors hover:text-white; }
 .legal-copy strong { @apply font-semibold text-slate-200; }
 
+.project-carousel-viewport { overflow: hidden; }
+.project-carousel-track { display: flex; gap: 20px; }
+.project-carousel-track > .project-card { min-width: 0; flex: 0 0 calc((100% - 40px) / 3); scroll-snap-align: start; }
+
+@media (max-width: 1023px) {
+  .project-carousel-track > .project-card { flex-basis: calc((100% - 20px) / 2); }
+}
+
+@media (max-width: 639px) {
+  .project-carousel-viewport { overflow-x: auto; scrollbar-width: none; scroll-snap-type: x mandatory; }
+  .project-carousel-viewport::-webkit-scrollbar { display: none; }
+  .project-carousel-track > .project-card { flex-basis: 100%; }
+}
+
 .hero-grid {
   background-image: linear-gradient(rgba(53, 76, 103, 0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(53, 76, 103, 0.09) 1px, transparent 1px);
   background-size: 74px 74px;
