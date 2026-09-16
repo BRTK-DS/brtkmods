@@ -67,8 +67,26 @@ const Index = () => {
   const text = copy[language];
 
   useEffect(() => {
+    const seo = language === "pl"
+      ? {
+          title: "BRTKMods.com — Mody Minecraft, Java, Kotlin i projekty interaktywne",
+          description: "BRTK Mods — portfolio Bartosza Siadlaka: mody Minecraft, projekty interaktywne, automatyzacje JavaScript, RCON i rozwiązania AI dla serwerów.",
+          locale: "pl_PL",
+        }
+      : {
+          title: "BRTKMods.com — Minecraft Mods, Java, Kotlin and Interactive Projects",
+          description: "BRTK Mods is Bartosz Siadlak's portfolio of Minecraft mods, interactive projects, JavaScript automations, RCON integrations and AI systems.",
+          locale: "en_US",
+        };
+
     document.documentElement.lang = language;
-    document.title = `${siteDomain} — Minecraft Mods`;
+    document.title = seo.title;
+    document.querySelector('meta[name="description"]')?.setAttribute("content", seo.description);
+    document.querySelector('meta[property="og:title"]')?.setAttribute("content", seo.title);
+    document.querySelector('meta[property="og:description"]')?.setAttribute("content", seo.description);
+    document.querySelector('meta[property="og:locale"]')?.setAttribute("content", seo.locale);
+    document.querySelector('meta[name="twitter:title"]')?.setAttribute("content", seo.title);
+    document.querySelector('meta[name="twitter:description"]')?.setAttribute("content", seo.description);
   }, [language]);
 
   const toggleLanguage = () => setLanguage((current) => current === "pl" ? "en" : "pl");

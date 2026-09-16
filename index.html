@@ -3,16 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BRTK Mods — portfolio twórcy modów Minecraft w Kotlinie, Javie, JavaScripcie i Pythonie." />
+    <meta name="description" content="BRTK Mods — portfolio Bartosza Siadlaka: mody Minecraft, projekty interaktywne, JavaScript, RCON i rozwiązania AI dla serwerów." />
+    <meta name="keywords" content="mody Minecraft, Minecraft modding, Java Minecraft, Kotlin Minecraft, JavaScript RCON, Tipply Minecraft, AI Minecraft, BRTK Mods" />
+    <meta name="author" content="Bartosz Siadlak" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta name="theme-color" content="#060b13" />
-    <meta property="og:title" content="BRTKMods.com — Minecraft Mods" />
-    <meta property="og:description" content="Dopracowane mody Minecraft i rozwiązania dla serwerów." />
-    <meta property="og:url" content="https://BRTKMods.com" />
-    <title>BRTKMods.com — Minecraft Mods</title>
+    <link rel="canonical" href="https://brtkmods.com/" />
+    <link rel="sitemap" type="application/xml" href="https://brtkmods.com/sitemap.xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BRTK Mods" />
+    <meta property="og:title" content="BRTKMods.com — Mody Minecraft i projekty interaktywne" />
+    <meta property="og:description" content="Portfolio Bartosza Siadlaka: mody Minecraft, integracje RCON, automatyzacje JavaScript i systemy AI." />
+    <meta property="og:url" content="https://brtkmods.com/" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="https://brtkmods.com/og-image.svg" />
+    <meta property="og:image:alt" content="BRTK Mods — Minecraft mods and interactive projects" />
+    <meta property="og:image:type" content="image/svg+xml" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BRTKMods.com — Mody Minecraft i projekty interaktywne" />
+    <meta name="twitter:description" content="Portfolio Bartosza Siadlaka: mody Minecraft, integracje RCON, automatyzacje JavaScript i systemy AI." />
+    <meta name="twitter:image" content="https://brtkmods.com/og-image.svg" />
+    <meta name="twitter:image:alt" content="BRTK Mods — Minecraft mods and interactive projects" />
+
+    <title>BRTKMods.com — Mody Minecraft i projekty interaktywne</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://brtkmods.com/#person",
+            "name": "Bartosz Siadlak",
+            "url": "https://brtkmods.com/",
+            "email": "mailto:brtkcontact@gmail.com",
+            "sameAs": ["https://github.com/brtk-ds"],
+            "knowsAbout": ["Minecraft modding", "Java", "Kotlin", "JavaScript", "Python", "RCON", "AI integrations"]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://brtkmods.com/#profile",
+            "url": "https://brtkmods.com/",
+            "name": "BRTK Mods — portfolio Bartosza Siadlaka",
+            "isPartOf": {"@id": "https://brtkmods.com/#website"},
+            "mainEntity": {"@id": "https://brtkmods.com/#person"},
+            "inLanguage": ["pl-PL", "en-US"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://brtkmods.com/#website",
+            "url": "https://brtkmods.com/",
+            "name": "BRTK Mods",
+            "description": "Portfolio twórcy modów Minecraft i interaktywnych projektów dla serwerów.",
+            "inLanguage": ["pl-PL", "en-US"],
+            "publisher": {"@id": "https://brtkmods.com/#person"}
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <main>
+        <h1>BRTK Mods — mody Minecraft i projekty interaktywne</h1>
+        <p>Portfolio Bartosza Siadlaka: Minecraft modding, Java, Kotlin, JavaScript, Python, RCON, Tipply i integracje AI.</p>
+        <p>Skontaktuj się w sprawie wykonania moda Minecraft lub projektu interaktywnego.</p>
+      </main>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
