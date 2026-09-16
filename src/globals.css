@@ -93,6 +93,8 @@
 .code-lines { background-image: linear-gradient(90deg, transparent 0, transparent 3.1rem, rgba(148, 163, 184, 0.045) 3.1rem, rgba(148, 163, 184, 0.045) 3.15rem, transparent 3.15rem); }
 
 .video-frame { position: relative; height: 235px; overflow: hidden; background: #081522; }
+.video-frame img { object-fit: cover; object-position: center; transform: scale(1.08); }
+.video-frame > .bg-gradient-to-t { display: none; }
 .video-cyan { background: radial-gradient(circle at 50% 40%, rgba(34, 211, 238, 0.2), transparent 35%), linear-gradient(140deg, #0d2534, #08111d); }
 .video-blue { background: radial-gradient(circle at 65% 45%, rgba(59, 130, 246, 0.3), transparent 33%), linear-gradient(140deg, #111f3d, #08111d); }
 .video-violet { background: radial-gradient(circle at 40% 45%, rgba(129, 140, 248, 0.25), transparent 33%), linear-gradient(140deg, #1b1b3b, #08111d); }
