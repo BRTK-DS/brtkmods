@@ -70,12 +70,12 @@ const Index = () => {
     const seo = language === "pl"
       ? {
           title: "BRTKMods.com — Mody Minecraft, Java, Kotlin i projekty interaktywne",
-          description: "BRTK Mods — portfolio Bartosza Siadlaka: mody Minecraft, projekty interaktywne, automatyzacje JavaScript, RCON i rozwiązania AI dla serwerów.",
+          description: "BRTK Mods — mody Minecraft, projekty interaktywne, automatyzacje JavaScript, RCON i rozwiązania AI dla serwerów.",
           locale: "pl_PL",
         }
       : {
           title: "BRTKMods.com — Minecraft Mods, Java, Kotlin and Interactive Projects",
-          description: "BRTK Mods is Bartosz Siadlak's portfolio of Minecraft mods, interactive projects, JavaScript automations, RCON integrations and AI systems.",
+          description: "BRTK Mods is a portfolio of Minecraft mods, interactive projects, JavaScript automations, RCON integrations and AI systems.",
           locale: "en_US",
         };
 
