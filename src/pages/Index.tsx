@@ -69,12 +69,12 @@ const navigation = [
 
 function Logo() {
   return (
-    <a href="#start" className="flex items-center gap-3" aria-label="ModForge — strona główna">
+    <a href="#start" className="flex items-center gap-3" aria-label="BRTK Mods — strona główna">
       <span className="logo-mark" aria-hidden="true">
         <Blocks size={20} strokeWidth={2.4} />
       </span>
       <span className="text-[15px] font-semibold tracking-[-0.03em] text-white">
-        Mod<span className="text-cyan-300">Forge</span>
+        BRTK <span className="text-cyan-300">Mods</span>
       </span>
     </a>
   );
@@ -96,7 +96,7 @@ function ProjectCard({ project }: { project: (typeof projects)[number] }) {
         <div className="video-topline">
           <span className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_10px_#67e8f9]" />
-            MODFORGE / DEMO
+            BRTK MODS / DEMO
           </span>
           <span>{project.version}</span>
         </div>
@@ -338,7 +338,7 @@ const Index = () => {
       <footer className="border-t border-white/[0.07] bg-[#060b13]">
         <div className="mx-auto flex max-w-[1180px] flex-col gap-6 px-5 py-9 sm:px-8 md:flex-row md:items-center md:justify-between">
           <Logo />
-          <p className="text-center text-xs text-slate-600">© 2025 ModForge. Tworzę z ciekawości, dostarczam z dbałością.</p>
+          <p className="text-center text-xs text-slate-600">© 2025 BRTK Mods. Tworzę z ciekawości, dostarczam z dbałością.</p>
           <div className="flex items-center justify-center gap-5 text-xs text-slate-500"><a href="#kontakt" className="hover:text-cyan-300">Kontakt</a><a href="https://github.com/brtk-ds" target="_blank" rel="noreferrer" className="hover:text-cyan-300">GitHub</a><a href="#prywatnosc" className="hover:text-cyan-300">Prywatność</a></div>
         </div>
         <div id="prywatnosc" className="mx-auto max-w-[1180px] border-t border-white/[0.05] px-5 py-5 text-center text-[11px] leading-5 text-slate-700 sm:px-8">Informacja o prywatności: formularz zbiera wyłącznie dane niezbędne do odpowiedzi na zapytanie. Dane nie są sprzedawane ani wykorzystywane do marketingu. Możesz poprosić o ich usunięcie, kontaktując się przez GitHub.</div>
